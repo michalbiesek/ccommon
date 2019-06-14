@@ -37,12 +37,12 @@ matrix:
             - libsubunit-dev
 
     - os: osx
-      osx_image: xcode10.1
+      osx_image: xcode10.2
       compiler: clang
 
   allow_failures:
     - os: osx
-      osx_image: xcode10.1
+      osx_image: xcode10.2
       compiler: clang
 
 before_install:
