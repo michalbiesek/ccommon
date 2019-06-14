@@ -11,7 +11,7 @@
 struct signal signals[SIGNAL_MAX];
 
 #ifndef CC_HAVE_SIGNAME
-const char* sys_signame[SIGNAL_MAX + 1] = {
+const char* const sys_signame[SIGNAL_MAX + 1] = {
     "UNDEFINED",
     "SIGHUP",
     "SIGINT",
