@@ -49,7 +49,7 @@ mkdir -p "$BUILD_DIR" && (
   cd "$BUILD_DIR" &&
   cmake "${CMAKEFLAGS[@]}" "$TOPLEVEL" &&
   make all &&
-  make check &&
+  make test &&
   cd rust &&
   cargo test
 )
